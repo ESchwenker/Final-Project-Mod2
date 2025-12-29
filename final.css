@@ -24,6 +24,12 @@ a:hover {
     text-decoration: underline;
 }
 
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .nav__container {
     width: 100%;
     max-width: 1200px;
@@ -97,4 +103,21 @@ button {
 
 .purple {
     color: #6415ff;
+}
+
+/* HEADER */
+
+.header__container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header__description {
+    width: 40%
+}
+
+.header__img--wrapper {
+    width: 60%;
 }
