@@ -34,10 +34,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
 .row {
     width: 100%;
     max-width: 1200px;
@@ -80,10 +76,30 @@ a:hover {
 
 .nav__link {
     font-size: 14px;
-    font-weight: 600;
     color: #243e63;
     margin: 0 24px;
     letter-spacing: 0.35px;
+    text-decoration: none;
+    position: relative;
+    font-weight: bold;
+}
+
+.nav__link::after,
+.nav__link--login::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;        /* this controls the space under the text */
+  width: 100%;
+  height: 2px;         /* thickness of the underline */
+  background-color: #6415ff;
+  opacity: 0;
+}
+
+.nav__link:hover::after,
+.nav__link--login:hover::after {
+  opacity: 1;
+  transition: opacity 800ms ease;
 }
 
 .nav__link--login {
@@ -93,10 +109,9 @@ a:hover {
     margin: 0 24px;
     margin-left: 48px;
     letter-spacing: 0.35px;
-}
-
-.nav__link:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    position: relative;
+    font-weight: bold;
 }
 
 .nav__btn {
@@ -193,6 +208,7 @@ button:hover {
 
 .header__img {
     width: 100%;
+    max-width: 700px;
     padding: 12px 12px;
 }
 
@@ -207,4 +223,79 @@ button:hover {
     width: 85%;
     padding-top: 20px;
     opacity: .5;
+}
+
+/* FEATURES */
+
+.features__container {
+    margin: 180px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.feature__row {
+    width: calc(100% / 3);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section__tag,
+.section__title,
+.section__para {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__tag {
+    color: #6415ff;
+    letter-spacing: 1.6px;
+}
+
+.section__title {
+    font-size: 48px;
+    font-weight: 900;
+    color: rgb(36, 62, 99);
+    line-height: 1.5;
+    margin: 16px 0;
+    letter-spacing: 0.025em;
+    text-align: center;
+}
+
+.section__para {
+    text-align: center;
+    font-size: 16px;
+    color: #7c8ba1;
+    font-weight: 500;
+    letter-spacing: 0.5;
+}
+
+.feature__title,
+.feature__para {
+    margin-top: 8px;
+    margin-left: 16px;
+    display: flex;
+    
+}
+
+.feature__title {
+    font-size: 24px;
+    color: #243e63;
+}
+
+.feature__img--wrapper {
+    display: flex;
+    padding: 20px;
+    border: 1px solid #e5e7eb;
+    border-radius: 500px;
+    width: 19%;
 }
