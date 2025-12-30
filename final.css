@@ -22,12 +22,14 @@ nav {
 h1 {
     font-size: 48px;
     line-height: 1.2;
+    letter-spacing: 1.6px;
     color: #1a202c;
 }
 
 h2 {
     font-size: 48px;
     font-weight: 900;
+    letter-spacing: 1.6px;
     color: rgb(36, 62, 99); 
 }
 
@@ -458,6 +460,8 @@ button:hover {
 .steps__description {
     width: 50%;
     margin-left: 70px;
+    display: flex;
+    flex-direction: column;
 }
 
 .steps__tag {
