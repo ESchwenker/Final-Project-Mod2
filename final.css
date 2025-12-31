@@ -504,4 +504,26 @@ button:hover {
     max-width: 320px;
 }
 
+/* VALUES */
+
+.values__row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.values__description {
+    width: 50%;
+}
+
+.values__img--wrapper {
+    width: 50%;
+}
+
+.values__img {
+    max-width: 400px;
+}
+
+
 
