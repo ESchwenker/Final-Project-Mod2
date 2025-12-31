@@ -676,9 +676,9 @@ button:hover {
 
 .plan {
     position: relative;
-    margin-top: 4rem;
+    margin-top: 80px;
     display: flex;
-    width: 100%;
+    width: calc(100% / 3);
     max-width: 24rem;
     flex-direction: column;
     border-radius: 0.5rem;
@@ -796,8 +796,8 @@ button:hover {
 }
 
 .plan__button:hover {
-    transform: translate(1px -1px);
-    box-shadow: 2px;
+    transform: translate(1px, -1px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .plan:nth-child(2) .plan__button {
@@ -815,5 +815,9 @@ button:hover {
     width: 256px;
     opacity: 0.25;
 }
+
+/* TESTIMONIALS */
+
+
 
 
