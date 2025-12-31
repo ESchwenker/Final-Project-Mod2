@@ -470,9 +470,14 @@ button:hover {
 
 .steps__list {
     display: flex;
-    align-items: flex-start;
-    width: calc(100% / 3);
+    flex-direction: column;
+    width: 100%;
     margin-top: 32px;
+}
+
+.steps__list--item {
+    display: flex;
+    gap: 28px;
 }
 
 .steps__number {
@@ -495,6 +500,8 @@ button:hover {
     margin-top: 12px;
     font-weight: 500;
     line-height: 2;
+    margin-bottom: 24px;
+    max-width: 320px;
 }
 
 
