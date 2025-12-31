@@ -424,14 +424,13 @@ button:hover {
 
 .steps__row {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 200px;
     margin-bottom: 200px;
-    padding: 20px 20px;
 }
 
 .steps__img--wrapper {
@@ -440,8 +439,7 @@ button:hover {
 }
 
 .steps__img {
-    max-width: 580px;
-    margin-top: 48px;
+    width: 100%;
 }
 
 .steps__grid {
@@ -506,6 +504,10 @@ button:hover {
 
 /* VALUES */
 
+.values__container {
+    margin-bottom: 250px;
+}
+
 .values__row {
     width: 100%;
     max-width: 1200px;
@@ -517,12 +519,89 @@ button:hover {
     width: 50%;
 }
 
+.values__list {
+    display: flex;
+    position: relative;
+}
+
+.values__list--item {
+    width: 100%;
+    display: flex;
+}
+
+.values__title {
+    margin-top: 16px;
+    margin-bottom: 18px;
+    max-width: 500px;
+}
+
+.values__para {
+    font-size: 16px;
+    color: #7c8ba1;
+    font-weight: 500;
+    line-height: 1.8;
+    margin-bottom: 24px;
+    max-width: 550px;
+}
+
+.list__para {
+    position: absolute;
+    margin-top: 28px;
+}
+
+.item__title {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #243e63;
+}
+
+.item__para {
+    margin-top: 16px;
+    line-height: 1.625;
+    color: #718096;
+    font-weight: 400;
+    max-width: 200px;
+    font-size: 16px;
+
+}
+
+.values__icon--wrapper {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.values__icon--dollar {
+    color: rgb(39, 103, 73);
+}
+
+.values__icon--suitcase {
+    color: rgb(155, 44, 44);
+}
+
+.values__list--item:nth-child(1) .values__icon--wrapper {
+    background-color: #43cf9ca2; /* green */
+}
+
+.values__list--item:nth-child(2) .values__icon--wrapper {
+    background-color: #f871719f; /* coral/red */
+}
+
 .values__img--wrapper {
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .values__img {
-    max-width: 400px;
+    max-width: 600px;
 }
 
 
