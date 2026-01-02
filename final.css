@@ -370,6 +370,7 @@ button:hover {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 
     margin-bottom: 100px;
 }
 
@@ -423,6 +424,7 @@ button:hover {
 }
 
 .quality__img {
+    width: 100%;
     max-width: 500px;
     border: 1px solid #7c8ba17a;
     border-radius: 4px;
@@ -1184,4 +1186,25 @@ footer {
 
 .footer__social--link:hover {
     opacity: 80%;
+}
+
+/* Large devices */
+@media (max-width: 1024px) {
+    .header__description {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__description, 
+    .header__img--wrapper {
+        width: 100%;
+        max-width: 512px;
+        margin: 0 auto;
+    }
+
+    .quality__img--wrapper {
+        margin-right: 120px;
+    }
 }
