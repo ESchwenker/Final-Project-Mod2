@@ -253,7 +253,7 @@ button:hover {
 
 .header__customers--title {
     color: #a0aec0;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 700;
     margin-top: 75px;
 }
@@ -370,7 +370,7 @@ button:hover {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 
+    padding: 12px;
     margin-bottom: 100px;
 }
 
@@ -415,13 +415,15 @@ button:hover {
     cursor: pointer;
 }
 
-.quality__img--wrapper  {
+.quality__img--wrapper {
     width: 50%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    margin: 0 80px;
+    max-height: 280px;
+    border-radius: 4px;
+    border: 1px solid rgb(229, 231, 235);
     position: relative;
+    margin: 48px 56px;
+    z-index: 2;
+    display: flex;
 }
 
 .quality__img {
@@ -712,13 +714,11 @@ button:hover {
     margin-top: 80px;
     display: flex;
     width: calc(100% / 3);
-    max-width: 24rem;
     flex-direction: column;
     border-radius: 0.5rem;
     background-color: rgb(255 255 255);
     padding-left: 2rem;
     padding-right: 2rem;
-    margin-right: 2rem;
     padding-top: 0.5rem;
     text-align: center;
     color: rgb(26 32 44);
@@ -860,6 +860,7 @@ button:hover {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    gap: 48px;
 }
 
 .love__img--wrapper {
@@ -875,7 +876,6 @@ button:hover {
     display: flex;
     flex-direction: column;
     width: 50%;
-    padding-left: 64px;
 }
 
 .testimonial__title {
@@ -927,7 +927,7 @@ button:hover {
 .profile__name {
     color: #4a5568;
     line-height: 1.625;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
 }
 
@@ -935,7 +935,7 @@ button:hover {
     color: #7c8ba1;
     font-weight: 500;
     line-height: 1.5;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .testimonial__bottom {
@@ -1001,12 +1001,13 @@ button:hover {
 }
 
 .start__row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
     margin: 0 auto;
-    padding: 0 96px;
+    max-width: 1024px;
+    padding: 0 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .start__title {
@@ -1209,6 +1210,11 @@ footer {
     .steps__img {
         max-width: 450px;
     }
+
+    .plan {
+        margin-right: 2rem;
+        max-width: 24rem;
+    }
 }
 
 /* Tablets */
@@ -1240,6 +1246,13 @@ footer {
         justify-content: center;
         align-items: center;
         text-align: center;
+    }
+
+    .quality__img--wrapper {
+        width: 100%;
+        width: 440px;
+        height: 300px;
+        margin-bottom: 60px;
     }
 
     .quality__description {
@@ -1332,7 +1345,6 @@ footer {
     .plans {
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
     .plan {
@@ -1373,10 +1385,7 @@ footer {
 
     .start__buttons {
         width: 100%;
-        align-items: center;
-    }
-
-    .start__button {
+        justify-content: center;
         z-index: 3;
     }
 
@@ -1412,5 +1421,145 @@ footer {
 
 /* Phones */
 @media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
 
+    .header__email {
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+
+    .header__email--input {
+        position: static;
+    }
+
+    .header__email--btn {
+        width: 100%;
+        height: 120px;
+        padding: 24px 0;
+        margin-top: 16px;
+    }
+
+    .header__customers--title {
+        margin-top: 24px;
+    }
+
+    .header__customers--img {
+        width: 100%;
+    }
+
+    .section__title {
+        font-size: 36px;
+    }
+
+    .feature__row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .quality__img--wrapper {
+        width: 100%;
+        width: 350px;
+        height: 250px;
+        margin-bottom: 60px;
+    }
+
+    .quality__description {
+        width: 100%;
+    }
+
+    .quality__title {
+        font-size: 30px;
+    }
+
+    .steps__img--wrapper {
+        width: 100%;
+        margin-top: -100px;
+    }
+
+    .steps__title {
+        font-size: 30px;
+    }
+
+    .values__img--wrapper {
+        margin-top: -100px;
+    }
+
+    .values__description {
+        width: 100%;
+    }
+
+    .values__title {
+        font-size: 30px;
+    }
+
+    .pricing__title {
+        font-size: 36px;
+    }
+
+    .love__img--wrapper {
+        margin-top: -150px;
+    }
+
+    .testimonials__row {
+        width: 100%;
+    }
+
+    .testimonials__description {
+        width: 100%;
+        max-width: 448px;
+        padding-left: -64px;
+    }
+
+    .testimonial__title {
+        font-size: 30px;
+    }
+
+    .testimonial__bottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimonial__profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial__img {
+        width: 64px;
+        height: 64px;
+    }
+
+    .profile__name {
+        margin-top: -14px;
+    }
+
+    .profile__title {
+        margin-bottom: 12px;
+    }
+
+    .start__title {
+        font-size: 24px;
+    }
+
+    .start__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .start__button,
+    .start__button--second {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
+    .start__button {
+        margin-bottom: -10px;
+    }
 }
