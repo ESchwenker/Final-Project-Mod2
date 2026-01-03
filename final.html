@@ -11,6 +11,7 @@
     <script
     src="https://kit.fontawesome.com/2100f2eec8.js"
       crossorigin="anonymous"></script>
+      <script src="final.js"></script>
   </head>
   <body>
     <section id="landing">
@@ -32,6 +33,18 @@
             <button a href="#" class="nav__btn">Sign Up</a></button>
           </div>
         </div>
+        <button class="btn__menu" onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i></button>
+        <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()"><i class="fa-solid fa-x"></i></button>
+        <ul class="menu__links">
+            <li class="menu__list"><a href="#" class="menu__link" onclick="closeMenu()">About</a></li>
+            <li class="menu__list"><a href="#" class="menu__link" onclick="closeMenu()">Blog</a></li>
+            <li class="menu__list"><a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a></li>
+            <li class="menu__list"><a href="#" class="menu__link" onclick="closeMenu()">Contact Us</a></li>
+            <li class="menu__list"><a href="#" class="menu__link" onclick="closeMenu()">Login In</a></li>
+            <li class="menu__list"><a href="#" class="menu__link--primary" onclick="closeMenu()">Sign Up</a></li>
+        </ul></div>
       </nav>
       <header>
         <div class="header__container">
@@ -351,6 +364,7 @@
                           <div class="plan__price">$17.99</div>
                           <div class="plan__duration">MONTHLY</div>
                         </div>
+                        <div class="plan__divider"></div>
                         <div class="plan__middle">
                             <div class="plan__target">For Individuals</div>
                             <div class="plan__feature">30 Templates</div>
@@ -358,6 +372,7 @@
                             <div class="plan__feature">12 Internal Pages</div>
                             <div class="plan__feature">Basic Assistance</div>
                         </div>
+                        <div class="plan__divider"></div>
                         <div class="plan__bottom">
                             <button class="plan__button">BUY NOW</button>
                         </div>
@@ -369,6 +384,7 @@
                           <div class="plan__price">$37.99</div>
                           <div class="plan__duration">MONTHLY</div>
                         </div>
+                        <div class="plan__divider"></div>
                         <div class="plan__middle">
                             <div class="plan__target">For Small Business</div>
                             <div class="plan__feature">60 Templates</div>
@@ -376,6 +392,7 @@
                             <div class="plan__feature">22 Internal Pages</div>
                             <div class="plan__feature">Priority Assistance</div>
                         </div>
+                        <div class="plan__divider"></div>
                         <div class="plan__bottom">
                             <button class="plan__button">BUY NOW</button>
                         </div>
@@ -387,6 +404,7 @@
                           <div class="plan__price">$57.99</div>
                           <div class="plan__duration">MONTHLY</div>
                         </div>
+                        <div class="plan__divider"></div>
                         <div class="plan__middle">
                             <div class="plan__target">For Large Business</div>
                             <div class="plan__feature">90 Templates</div>
@@ -394,6 +412,7 @@
                             <div class="plan__feature">37 Internal Pages</div>
                             <div class="plan__feature">Personal Assistance</div>
                         </div>
+                        <div class="plan__divider"></div>
                         <div class="plan__bottom">
                             <button class="plan__button">BUY NOW</button>
                         </div>
